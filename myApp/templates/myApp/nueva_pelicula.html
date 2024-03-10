@@ -1,0 +1,16 @@
+{% extends "myApp/inicio.html" %}
+
+{% block titulo %}
+<h1>Página para agregar Peliculas</h1>
+{% endblock titulo %}
+
+{% block formulario %}
+<p>Formulario</p>
+<form action='' method='post'>  {% csrf_token %}
+
+    {{form}}
+    <input type='submit' value='Guardar'>
+
+</form>
+{% endblock formulario %}
+
